@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiMate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor banner">
+            <a class="banner__logo" href="../index.html"><h1>Mi<span>Mate</span></h1></a>
+            <nav>
+                <ul class="banner__navegacion">
+                    <li><a href="../index.html" class="banner__navegacion__enlace">Inicio</a></li>
+                    <li><a href="./entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
+                    <li><a href="./contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
+                    <li><a href="./productos.html" class="banner__navegacion__enlace">Productos</a></li>
+                    <li><a href="./nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="contenedor">
+        <form class="formulario " action=" " method="get" enctype="text/plain">
+            <fieldset class="formulario__recuadro ">
+                <legend class="centrar__texto">Infomación Personal:</legend>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input placeholder="Tu Nombre" type="text" name="name" id="name" required>
+                </div>                
+                <div>
+                    <label for="lastname">Apellido:</label>
+                    <input placeholder="Tu Apellido" type="text" name="lastname" id="lastname" required>
+                </div>                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input placeholder="Tu Email" type="email" name="email" id="email" required>
+                </div>                
+                <div>
+                    <label for="estado">Estado civil:</label>
+                    <select name="estado" id="estado">
+                    <option value="s">Soltero/a</option>
+                    <option value="c">Casado/a</option>
+                    </select>
+                </div>                
+                <div>
+                    <legend class="formulario__legend">Cuentanos tu opinion</legend>
+                    <textarea name="Comentario" id="comentario" cols="30" rows="10"></textarea>
+                </div>                
+                <div class="boton__formulario">
+                    <input class="boton" type="reset" value="Limpiar formulario">
+                    <input class="boton" type="submit" value="Enviar formulario">
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor banner">
+            <a class="banner__logo" href="../index.html"><h1>Mi<span>Mate</span></h1></a>
+            <nav>
+                <ul class="banner__navegacion">
+                    <li><a href="../index.html" class="banner__navegacion__enlace">Inicio</a></li>
+                    <li><a href="./entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
+                    <li><a href="./contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
+                    <li><a href="./productos.html" class="banner__navegacion__enlace">Productos</a></li>
+                    <li><a href="./nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
