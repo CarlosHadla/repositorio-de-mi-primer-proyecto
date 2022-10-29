@@ -1,0 +1,68 @@
+/*Selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 1rem;
+    font-family:josefin, sans-serif;    
+}
+
+/*Generales*/
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+.centrar__texto{
+    text-align: center;
+}
+.textos{
+    padding: 1rem;
+}
+h2,h3,h4{
+    font-size: 1.8rem;
+    line-height: 2;
+}
+p{
+    font-size: 1.3rem;
+    line-height: 1.3;
+    text-align: justify;
+}
+.imagenes{
+    max-width: 20rem;
+    margin: auto;   
+    max-height: 20rem; 
+    width: auto;
+    height: auto;
+
+}
+li{
+    list-style-type: none;
+}
+
+.boton{
+    margin: 1rem 0;
+    padding: 0.6rem;
+    display: inline-block;
+    background-color: orange;
+    /* border: .1rem solid gray; */
+    border: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+}
+.boton:hover{
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
