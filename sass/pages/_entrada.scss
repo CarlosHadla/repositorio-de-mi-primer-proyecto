@@ -1,0 +1,57 @@
+
+/* Entrada page */
+.entrada1{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "imagen1 parrafo1 parrafo1"
+    "video video video"
+    "parrafo2 parrafo2 imagen2";
+    &__texto{    grid-area: titulo;}
+    &__textos1{    grid-area: parrafo1;}
+    &__textos2{    grid-area: parrafo2;}
+    &__imagen1{    grid-area: imagen1;}
+    &__imagen2{    grid-area: imagen2;}
+    &__video{
+        grid-area: video;
+        width: 70%;
+        display: block;
+        margin: auto;
+        height: 25rem;
+        max-width: 90rem;
+    }
+    @media screen and (max-width: 1200px) {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 20% 1fr 20%;
+            grid-template-areas: 
+            "titulo titulo titulo"
+            " parrafo1 parrafo1 parrafo1"
+            "imagen1 video imagen2"
+            "parrafo2 parrafo2 parrafo2";
+        &__video, &__imagen1, &__imagen2{
+            width: 100%;
+            height: 40vh;
+        }
+    }
+    @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "titulo"
+            "imagen1"
+            "parrafo1"
+            "video"
+            "imagen2"
+            "parrafo2";
+        &__imagen1,&__imagen2{
+            width: 100%;
+            height: auto;
+        }
+        &__video{
+            height: 25rem;
+        }
+    }
+}

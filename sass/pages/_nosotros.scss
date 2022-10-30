@@ -1,0 +1,22 @@
+/*Nosotros*/
+.nosotros{
+    padding: 2rem 0;
+    &__interno {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        height: 40rem;
+        align-items: center;
+        
+    }
+    &__imagen{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    @media screen and (max-width: 1200px) {
+        &__interno {
+            grid-template-columns: 1fr;
+        }
+    }
+}

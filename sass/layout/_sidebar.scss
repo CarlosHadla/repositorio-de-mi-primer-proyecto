@@ -1,0 +1,42 @@
+.sidebar__productos, .productos__producto {
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar{
+
+    &__imagen{
+        height:15rem;
+
+    }
+    &__boton{
+        display: block;
+        padding: .5rem;
+    }
+    @media screen and (max-width: 1200px) {
+        &__productos{
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+    &__productos {
+        width: 100%;
+        padding: 1rem 0;
+        border-radius: 0;
+        flex-direction: column;
+    }
+    &__productos .boton{
+        border-radius: 0;
+    }
+
+    /*Producto*/
+    &__productos__1{
+        border-radius: 0;
+    }
+    }
+}

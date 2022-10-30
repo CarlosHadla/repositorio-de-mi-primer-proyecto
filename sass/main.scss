@@ -1,6 +1,12 @@
 
 @import "./layout/universal";
 @import "./layout/header";
+@import "./layout/banner";
+@import "./layout/sidebar";
+@import "./layout/footer";
 
-
-
+@import "./pages/principal";
+@import "./pages/formulario";
+@import "./pages/entrada";
+@import "./pages/productos";
+@import "./pages/nosotros";

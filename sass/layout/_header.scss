@@ -5,4 +5,20 @@
     background-size: cover;
     padding: 3rem;
 
+
+    & .banner__logo span{
+        color: rgb(173, 169, 169);    
+    }
+
+    /*Estilos Tablet*/
+    @media screen and (max-width: 1200px) {
+            /*Head*/ 
+            padding: 0;
+        & .banner__navegacion{
+            background-color: darkgreen;
+        }
+    }
+    @media screen and (max-width: 768px) {
+            padding: 0;
+    }
 }

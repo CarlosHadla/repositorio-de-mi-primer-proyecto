@@ -1,0 +1,29 @@
+
+
+/*FOOTER*/
+.footer{
+    background-color: black;
+
+    & .banner__navegacion__enlace:hover{
+        background-color: green;
+    }
+
+    @media screen and (max-width: 1200px) {
+        & .banner__logo{
+            grid-row: 2;
+        }
+        & .banner {
+            padding-bottom: 4rem;
+            padding-top: 0;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        & .banner{
+            padding:0;
+        }
+        & .banner__logo{
+            grid-row: auto;
+        }
+    }
+}
+

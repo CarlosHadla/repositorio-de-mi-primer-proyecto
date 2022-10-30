@@ -1,0 +1,48 @@
+/*Formulario*/
+.formulario{
+    display: block;
+    margin: auto;
+    margin: 1rem;
+    
+
+    &__recuadro{
+        
+        display: grid;
+        grid-template-rows: auto;
+        gap: 1rem;
+        justify-items: center;
+        width: 25rem;
+        padding: 2rem;
+        margin: auto;
+        font-size: 1.5rem;
+        border: 1px solid gray;
+        width: 35rem;
+        max-width: 90%;
+    }
+    &__legend{
+        margin-bottom: 0.5rem;
+    }
+    &__interno{
+        display: flex;
+        gap: 1rem;
+        padding: 0 1rem ;
+    }
+    &__boton{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+    }
+    &__input{
+        padding: .3rem;
+        font-size: 1.2rem;
+        
+    }
+    /*Estilos Mobile*/
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        &__recuadro{
+            width: 100%;
+        }
+    }
+}

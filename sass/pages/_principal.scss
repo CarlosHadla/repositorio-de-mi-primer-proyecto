@@ -1,0 +1,30 @@
+
+.contenido__principal {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr;
+    }
+}
+
+/*entrada*/
+.entrada{
+    &__contenido{
+    display: flex;
+    gap: 1rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid lightgray;
+    }
+    @media screen and (max-width: 1200px) {
+        &__contenido {
+            flex-direction: column;
+            margin: 0;
+        }
+        &__imagen{
+            height: 30rem;
+        }
+    }
+
+}

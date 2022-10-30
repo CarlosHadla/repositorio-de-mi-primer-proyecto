@@ -1,0 +1,65 @@
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 85%;
+    &__logo h1{
+        font-size: 5rem;
+        color: white;
+    }
+    &__logo span{
+        font-weight: 700;
+        color: green;   
+    }
+
+    &__navegacion {
+        display: flex;
+        justify-content:center;
+    }
+    &__navegacion__enlace{
+        color: white;
+        display: inline-block;
+        padding: 1rem;
+        border-radius: .5rem;
+        margin:0;
+        font-size: 2rem;
+    }
+    &__navegacion__enlace:hover{
+        background-color: black;
+        color: white;
+    }
+    @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+            width: 100%;
+            padding: 3rem 0 0 0;
+        &__navegacion {
+            justify-content: space-evenly;
+            margin: 0;
+            grid-row: 1;
+        }
+        &__navegacion__enlace {
+            padding: 1rem ;
+        }
+    }
+    @media screen and (max-width: 768px) {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+        &__logo {
+            text-align: center;
+        }
+        &__navegacion {
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+        }
+        &__navegacion__enlace {
+            display: block;
+            
+            padding: 1rem 0;
+            margin: .5rem 0;
+        }
+    }
+}
