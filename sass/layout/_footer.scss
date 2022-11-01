@@ -1,14 +1,15 @@
-
+@import "../utilities/variables";
 
 /*FOOTER*/
 .footer{
-    background-color: black;
+    background-color: $negro;
+    padding-bottom: 8rem;
 
     & .banner__navegacion__enlace:hover{
         background-color: green;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $tablet-max) {
         & .banner__logo{
             grid-row: 2;
         }
@@ -17,7 +18,7 @@
             padding-top: 0;
         }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $telefono-max) {
         & .banner{
             padding:0;
         }

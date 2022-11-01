@@ -58,7 +58,7 @@ li {
   font-size: 1.3rem; }
 
 .boton:hover {
-  background-color: darkgreen;
+  background-color: #185f18;
   color: white;
   cursor: pointer; }
 
@@ -82,13 +82,13 @@ li {
   padding: 3rem;
   /*Estilos Tablet*/ }
   .header .banner__logo span {
-    color: #ada9a9; }
+    color: #8d8383; }
   @media screen and (max-width: 1200px) {
     .header {
       /*Head*/
       padding: 0; }
       .header .banner__navegacion {
-        background-color: darkgreen; } }
+        background-color: #185f18; } }
   @media screen and (max-width: 768px) {
     .header {
       padding: 0; } }
@@ -104,7 +104,7 @@ li {
     color: white; }
   .banner__logo span {
     font-weight: 700;
-    color: green; }
+    color: #14a314; }
   .banner__navegacion {
     display: flex;
     justify-content: center; }
@@ -182,7 +182,8 @@ li {
 
 /*FOOTER*/
 .footer {
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 8rem; }
   .footer .banner__navegacion__enlace:hover {
     background-color: green; }
   @media screen and (max-width: 1200px) {
@@ -235,7 +236,7 @@ li {
     padding: 2rem;
     margin: auto;
     font-size: 1.5rem;
-    border: 1px solid gray;
+    border: 1px solid #8d8383;
     width: 35rem;
     max-width: 90%; }
   .formulario__legend {
@@ -327,4 +328,6 @@ li {
     max-height: 100%; }
   @media screen and (max-width: 1200px) {
     .nosotros__interno {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr; }
+    .nosotros__texto {
+      margin-bottom: 3rem; } }

@@ -1,14 +1,15 @@
+@import "../utilities/variables";
 /*Productos*/
 .producto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $tablet-max) {
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $telefono-max) {
         grid-template-columns:1fr;
     }
 }

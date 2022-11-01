@@ -1,5 +1,7 @@
+@import "../utilities/variables";
+
 .sidebar__productos, .productos__producto {
-    background-color: beige;
+    background-color: $fondo--productos;
     padding: 1rem;
     border-radius: 1rem;
     text-align: center;
@@ -16,14 +18,14 @@
         display: block;
         padding: .5rem;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $tablet-max) {
         &__productos{
             display: flex;
             flex-direction: row;
             gap: 3rem;
         }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $telefono-max) {
     &__productos {
         width: 100%;
         padding: 1rem 0;

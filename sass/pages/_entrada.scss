@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 
 /* Entrada page */
 .entrada1{
@@ -23,7 +25,7 @@
         height: 25rem;
         max-width: 90rem;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $tablet-max) {
             display: grid;
             gap: 1rem;
             grid-template-columns: 20% 1fr 20%;
@@ -37,7 +39,7 @@
             height: 40vh;
         }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $telefono-max) {
             grid-template-columns: 1fr;
             grid-template-areas: 
             "titulo"

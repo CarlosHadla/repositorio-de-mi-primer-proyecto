@@ -1,3 +1,4 @@
+@import "../utilities/variables";
 
 .contenido__principal {
     display: grid;
@@ -15,9 +16,9 @@
     display: flex;
     gap: 1rem;
     padding: 3rem 0;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $gris--claro;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $tablet-max) {
         &__contenido {
             flex-direction: column;
             margin: 0;

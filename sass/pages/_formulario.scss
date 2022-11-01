@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 /*Formulario*/
 .formulario{
     display: block;
@@ -15,7 +17,7 @@
         padding: 2rem;
         margin: auto;
         font-size: 1.5rem;
-        border: 1px solid gray;
+        border: 1px solid $gris;
         width: 35rem;
         max-width: 90%;
     }
@@ -39,7 +41,7 @@
         
     }
     /*Estilos Mobile*/
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $telefono-max) {
         margin: 0;
         &__recuadro{
             width: 100%;
