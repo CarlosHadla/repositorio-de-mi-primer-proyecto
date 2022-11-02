@@ -22,17 +22,36 @@
     <header class="header">
         <div class="container-fluid p-0 banner">
             <a class="banner__logo" href="./index.html"><h1>Mi<span>Mate</span></h1></a>
-            <nav>
-                <ul class="banner__navegacion">
-                    <li><a href="./blog/entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
-                    <li><a href="./info/contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
-                    <li><a href="./info/productos.html" class="banner__navegacion__enlace">Productos</a></li>
-                    <li><a href="./info/nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
-                </ul>
-            </nav>
+
+            <div class="banner__navegacion__principal">
+                <nav class="banner__ocultar">
+                    <ul class="banner__navegacion">
+                        <li><a href="./blog/entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
+                        <li><a href="./info/contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
+                        <li><a href="./info/productos.html" class="banner__navegacion__enlace">Productos</a></li>
+                        <li><a href="./info/nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
+                    </ul>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="p-4">
+                        <ul class="banner__navegacion">
+                            <li><a href="./blog/entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
+                            <li><a href="./info/contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
+                            <li><a href="./info/productos.html" class="banner__navegacion__enlace">Productos</a></li>
+                            <li><a href="./info/nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-dark  navbar-expand-md">
+                    <div class="container-fluid hamburguesa__contenedor">
+                    <button class="navbar-toggler hamburguesa__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon hamburguesa__icono"></span>
+                    </button>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
-
     <div class="container-lg contenido__principal">
         <main class="contenido">
             <h1>Contenido del Blog</h1>
