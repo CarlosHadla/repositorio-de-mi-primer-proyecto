@@ -1,15 +1,18 @@
 @import "../utilities/variables";
-/*Productos*/
-.producto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+@import "../utilities/mixins";
 
-    @media screen and (max-width: $tablet-max) {
+
+.producto {
+    @include grids(1fr, 1fr, 1fr);
+    gap: 2rem;
+    &__producto{
+        @include productos;
+    }
+    @include media($tablet-max){
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: $telefono-max) {
+    @include media($telefono-max) {
         grid-template-columns:1fr;
     }
 }

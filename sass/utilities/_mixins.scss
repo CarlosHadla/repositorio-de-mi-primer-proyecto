@@ -1,3 +1,23 @@
-@mixin media($tamaño) {
-    
+
+
+@mixin media($tamano) {
+    @media screen and (max-width : $tamano){
+        @content;
+    }
 }
+
+@mixin productos{
+    background-color: $fondo--productos;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin grids ($fr1,$fr2,$fr3){
+    display: grid;
+    grid-template-columns: $fr1 $fr2 $fr3;
+}
+
+

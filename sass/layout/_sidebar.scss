@@ -1,12 +1,9 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
-.sidebar__productos, .productos__producto {
-    background-color: $fondo--productos;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+
+.sidebar__productos {
+    @include productos;
 }
 .sidebar{
 
@@ -18,14 +15,14 @@
         display: block;
         padding: .5rem;
     }
-    @media screen and (max-width: $tablet-max) {
+    @include media($tablet-max){
         &__productos{
             display: flex;
             flex-direction: row;
             gap: 3rem;
         }
     }
-    @media screen and (max-width: $telefono-max) {
+    @include media($telefono-max) {
     &__productos {
         width: 100%;
         padding: 1rem 0;
@@ -36,7 +33,6 @@
         border-radius: 0;
     }
 
-    /*Producto*/
     &__productos__1{
         border-radius: 0;
     }

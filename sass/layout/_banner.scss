@@ -1,9 +1,9 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 
 .banner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include grids(1fr, 1fr, 0);
     justify-content: space-between;
     align-items: baseline;
     width: 85%;
@@ -32,8 +32,8 @@
         background-color: $negro;
         color: $blanco;
     }
-    @media screen and (max-width: $tablet-max) {
-            grid-template-columns: 1fr;
+    @include media($tablet-max){
+        grid-template-columns: 1fr;
             text-align: center;
             width: 100%;
             padding: 3rem 0 0 0;
@@ -46,10 +46,8 @@
             padding: 1rem ;
         }
     }
-    @media screen and (max-width: $telefono-max) {
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
+
+    @include media($telefono-max) {
         &__logo {
             text-align: center;
         }

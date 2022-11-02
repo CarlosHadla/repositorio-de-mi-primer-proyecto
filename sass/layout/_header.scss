@@ -1,6 +1,7 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
-/* Header */
+
 .header{
     background-image: url(../images/backgroundImage.jpg);
     background-repeat: no-repeat;
@@ -12,15 +13,14 @@
         color: $gris;    
     }
 
-    /*Estilos Tablet*/
-    @media screen and (max-width: $tablet-max) {
-            /*Head*/ 
+
+    @include media($tablet-max){
             padding: 0;
         & .banner__navegacion{
             background-color: $verde-oscuro;
         }
     }
-    @media screen and (max-width: $telefono-max) {
+    @include media($telefono-max) {
             padding: 0;
     }
 }

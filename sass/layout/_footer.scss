@@ -1,6 +1,7 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
-/*FOOTER*/
+
 .footer{
     background-color: $negro;
     padding-bottom: 8rem;
@@ -9,7 +10,7 @@
         background-color: green;
     }
 
-    @media screen and (max-width: $tablet-max) {
+    @include media($tablet-max){
         & .banner__logo{
             grid-row: 2;
         }
@@ -18,7 +19,7 @@
             padding-top: 0;
         }
     }
-    @media screen and (max-width: $telefono-max) {
+    @include media($telefono-max) {
         & .banner{
             padding:0;
         }

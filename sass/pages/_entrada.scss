@@ -1,11 +1,12 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 
-/* Entrada page */
+
+
 .entrada1{
-    display: grid;
+    @include grids(1fr, 1fr, 1fr);
     gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "titulo titulo titulo"
@@ -25,8 +26,7 @@
         height: 25rem;
         max-width: 90rem;
     }
-    @media screen and (max-width: $tablet-max) {
-            display: grid;
+    @include media($tablet-max){
             gap: 1rem;
             grid-template-columns: 20% 1fr 20%;
             grid-template-areas: 
@@ -39,7 +39,7 @@
             height: 40vh;
         }
     }
-    @media screen and (max-width: $telefono-max) {
+    @include media($telefono-max) {
             grid-template-columns: 1fr;
             grid-template-areas: 
             "titulo"

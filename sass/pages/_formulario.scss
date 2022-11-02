@@ -1,6 +1,8 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
-/*Formulario*/
+
+
 .formulario{
     display: block;
     margin: auto;
@@ -41,7 +43,7 @@
         
     }
     /*Estilos Mobile*/
-    @media screen and (max-width: $telefono-max) {
+    @include media($telefono-max) {
         margin: 0;
         &__recuadro{
             width: 100%;

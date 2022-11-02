@@ -1,4 +1,3 @@
-/*Selector universal*/
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,6 @@
   font-size: 1rem;
   font-family: josefin, sans-serif; }
 
-/*Generales*/
 a {
   text-decoration: none;
   font-weight: bold; }
@@ -49,7 +47,6 @@ li {
   padding: 0.6rem;
   display: inline-block;
   background-color: orange;
-  /* border: .1rem solid gray; */
   border: none;
   text-align: center;
   color: white;
@@ -63,7 +60,6 @@ li {
   cursor: pointer; }
 
 @media screen and (max-width: 1200px) {
-  /*Util*/
   .imagenes {
     width: auto;
     max-width: 100%;
@@ -74,18 +70,15 @@ li {
     display: block;
     padding: 1rem; } }
 
-/* Header */
 .header {
   background-image: url(../images/backgroundImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem;
-  /*Estilos Tablet*/ }
+  padding: 3rem; }
   .header .banner__logo span {
     color: #8d8383; }
   @media screen and (max-width: 1200px) {
     .header {
-      /*Head*/
       padding: 0; }
       .header .banner__navegacion {
         background-color: #185f18; } }
@@ -95,7 +88,7 @@ li {
 
 .banner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0;
   justify-content: space-between;
   align-items: baseline;
   width: 85%; }
@@ -131,22 +124,18 @@ li {
       .banner__navegacion__enlace {
         padding: 1rem; } }
   @media screen and (max-width: 768px) {
-    .banner {
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: 1fr; }
-      .banner__logo {
-        text-align: center; }
-      .banner__navegacion {
-        flex-direction: column;
-        text-align: center;
-        padding: 0; }
-      .banner__navegacion__enlace {
-        display: block;
-        padding: 1rem 0;
-        margin: .5rem 0; } }
+    .banner__logo {
+      text-align: center; }
+    .banner__navegacion {
+      flex-direction: column;
+      text-align: center;
+      padding: 0; }
+    .banner__navegacion__enlace {
+      display: block;
+      padding: 1rem 0;
+      margin: .5rem 0; } }
 
-.sidebar__productos, .productos__producto {
+.sidebar__productos {
   background-color: beige;
   padding: 1rem;
   border-radius: 1rem;
@@ -168,19 +157,16 @@ li {
     gap: 3rem; } }
 
 @media screen and (max-width: 768px) {
-  .sidebar {
-    /*Producto*/ }
-    .sidebar__productos {
-      width: 100%;
-      padding: 1rem 0;
-      border-radius: 0;
-      flex-direction: column; }
-    .sidebar__productos .boton {
-      border-radius: 0; }
-    .sidebar__productos__1 {
-      border-radius: 0; } }
+  .sidebar__productos {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0;
+    flex-direction: column; }
+  .sidebar__productos .boton {
+    border-radius: 0; }
+  .sidebar__productos__1 {
+    border-radius: 0; } }
 
-/*FOOTER*/
 .footer {
   background-color: black;
   padding-bottom: 8rem; }
@@ -200,14 +186,13 @@ li {
 
 .contenido__principal {
   display: grid;
+  grid-template-columns: 2fr 1fr 0;
   gap: 2rem;
-  grid-template-columns: 2fr 1fr;
   justify-content: space-between; }
   @media screen and (max-width: 1200px) {
     .contenido__principal {
       grid-template-columns: 1fr; } }
 
-/*entrada*/
 .entrada__contenido {
   display: flex;
   gap: 1rem;
@@ -221,7 +206,6 @@ li {
   .entrada__imagen {
     height: 30rem; } }
 
-/*Formulario*/
 .formulario {
   display: block;
   margin: auto;
@@ -258,11 +242,10 @@ li {
       .formulario__recuadro {
         width: 100%; } }
 
-/* Entrada page */
 .entrada1 {
   display: grid;
-  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
   grid-template-rows: auto;
   grid-template-areas: "titulo titulo titulo" "imagen1 parrafo1 parrafo1" "video video video" "parrafo2 parrafo2 imagen2"; }
   .entrada1__texto {
@@ -284,7 +267,6 @@ li {
     max-width: 90rem; }
   @media screen and (max-width: 1200px) {
     .entrada1 {
-      display: grid;
       gap: 1rem;
       grid-template-columns: 20% 1fr 20%;
       grid-template-areas: "titulo titulo titulo" " parrafo1 parrafo1 parrafo1" "imagen1 video imagen2" "parrafo2 parrafo2 parrafo2"; }
@@ -301,11 +283,17 @@ li {
       .entrada1__video {
         height: 25rem; } }
 
-/*Productos*/
 .producto {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem; }
+  .producto__producto {
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
   @media screen and (max-width: 1200px) {
     .producto {
       grid-template-columns: 1fr 1fr; } }
@@ -313,21 +301,17 @@ li {
     .producto {
       grid-template-columns: 1fr; } }
 
-/*Nosotros*/
-.nosotros {
-  padding: 2rem 0; }
+.nosotros__interno {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: auto auto 0;
+  gap: 1rem;
+  align-items: center; }
+
+.nosotros__imagen {
+  max-width: 100%;
+  max-height: 100%; }
+
+@media screen and (max-width: 1200px) {
   .nosotros__interno {
-    margin: 2rem 0;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
-    height: 40rem;
-    align-items: center; }
-  .nosotros__imagen {
-    max-width: 100%;
-    max-height: 100%; }
-  @media screen and (max-width: 1200px) {
-    .nosotros__interno {
-      grid-template-columns: 1fr; }
-    .nosotros__texto {
-      margin-bottom: 3rem; } }
+    grid-template-columns: 1fr; } }

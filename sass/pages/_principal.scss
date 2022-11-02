@@ -1,16 +1,17 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
+
 
 .contenido__principal {
-    display: grid;
+    @include grids(2fr, 1fr, 0);
     gap: 2rem;
-    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
     @media screen and (max-width: 1200px) {
             grid-template-columns: 1fr;
     }
 }
 
-/*entrada*/
+
 .entrada{
     &__contenido{
     display: flex;
@@ -18,7 +19,7 @@
     padding: 3rem 0;
     border-bottom: 1px solid $gris--claro;
     }
-    @media screen and (max-width: $tablet-max) {
+    @include media($tablet-max){
         &__contenido {
             flex-direction: column;
             margin: 0;
@@ -27,5 +28,4 @@
             height: 30rem;
         }
     }
-
 }

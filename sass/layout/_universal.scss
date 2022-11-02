@@ -1,6 +1,7 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
-/*Selector universal*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@
     font-size: 1rem;
     font-family:josefin, sans-serif;    
 }
-/*Generales*/
+
 a{
     text-decoration: none;
     font-weight: bold;
@@ -52,7 +53,6 @@ li{
     padding: 0.6rem;
     display: inline-block;
     background-color: $botones--interno;
-    /* border: .1rem solid gray; */
     border: none;
     text-align: center;
     color: $blanco;
@@ -66,9 +66,9 @@ li{
     cursor: pointer;
 }
 
-@media screen and (max-width: $tablet-max) {
+@include media($tablet-max){
 
-    /*Util*/
+
     .imagenes{
         width: auto;
         max-width: 100%;
