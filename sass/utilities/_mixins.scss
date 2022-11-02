@@ -1,5 +1,11 @@
 
 
+@mixin altoAncho ($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+
+}
+
 @mixin media($tamano) {
     @media screen and (max-width : $tamano){
         @content;

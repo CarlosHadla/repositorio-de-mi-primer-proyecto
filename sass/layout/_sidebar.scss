@@ -8,7 +8,7 @@
 .sidebar{
 
     &__imagen{
-        height:15rem;
+        @include altoAncho (15rem,auto);
 
     }
     &__boton{

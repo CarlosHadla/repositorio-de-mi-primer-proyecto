@@ -6,7 +6,7 @@
     @include grids(1fr, 1fr, 0);
     justify-content: space-between;
     align-items: baseline;
-    width: 85%;
+    @include altoAncho (auto,85%)
     &__logo h1{
         font-size: 5rem;
         color: $blanco;

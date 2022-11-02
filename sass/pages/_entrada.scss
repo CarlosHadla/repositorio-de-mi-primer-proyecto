@@ -20,10 +20,9 @@
     &__imagen2{    grid-area: imagen2;}
     &__video{
         grid-area: video;
-        width: 70%;
+        @include altoAncho (25rem,70%);
         display: block;
         margin: auto;
-        height: 25rem;
         max-width: 90rem;
     }
     @include media($tablet-max){
@@ -49,8 +48,7 @@
             "imagen2"
             "parrafo2";
         &__imagen1,&__imagen2{
-            width: 100%;
-            height: auto;
+            @include altoAncho (auto,100%);
         }
         &__video{
             height: 25rem;

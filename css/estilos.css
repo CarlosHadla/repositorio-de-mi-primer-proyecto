@@ -36,8 +36,8 @@ p {
   max-width: 20rem;
   margin: auto;
   max-height: 20rem;
-  width: auto;
-  height: auto; }
+  height: auto;
+  width: auto; }
 
 li {
   list-style-type: none; }
@@ -61,7 +61,6 @@ li {
 
 @media screen and (max-width: 1200px) {
   .imagenes {
-    width: auto;
     max-width: 100%;
     max-height: 100%; }
   h1, h2 {
@@ -82,15 +81,13 @@ li {
       padding: 0; }
       .header .banner__navegacion {
         background-color: #185f18; } }
-  @media screen and (max-width: 768px) {
-    .header {
-      padding: 0; } }
 
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 0;
   justify-content: space-between;
   align-items: baseline;
+  height: auto;
   width: 85%; }
   .banner__logo h1 {
     font-size: 5rem;
@@ -144,7 +141,8 @@ li {
   flex-direction: column; }
 
 .sidebar__imagen {
-  height: 15rem; }
+  height: 15rem;
+  width: auto; }
 
 .sidebar__boton {
   display: block;
@@ -176,8 +174,7 @@ li {
     .footer .banner__logo {
       grid-row: 2; }
     .footer .banner {
-      padding-bottom: 4rem;
-      padding-top: 0; } }
+      padding: 0 0 4rem 0; } }
   @media screen and (max-width: 768px) {
     .footer .banner {
       padding: 0; }
@@ -208,7 +205,6 @@ li {
 
 .formulario {
   display: block;
-  margin: auto;
   margin: 1rem;
   /*Estilos Mobile*/ }
   .formulario__recuadro {
@@ -260,10 +256,10 @@ li {
     grid-area: imagen2; }
   .entrada1__video {
     grid-area: video;
+    height: 25rem;
     width: 70%;
     display: block;
     margin: auto;
-    height: 25rem;
     max-width: 90rem; }
   @media screen and (max-width: 1200px) {
     .entrada1 {
@@ -278,16 +274,16 @@ li {
       grid-template-columns: 1fr;
       grid-template-areas: "titulo" "imagen1" "parrafo1" "video" "imagen2" "parrafo2"; }
       .entrada1__imagen1, .entrada1__imagen2 {
-        width: 100%;
-        height: auto; }
+        height: auto;
+        width: 100%; }
       .entrada1__video {
         height: 25rem; } }
 
-.producto {
+.productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem; }
-  .producto__producto {
+  .productos__producto {
     background-color: beige;
     padding: 1rem;
     border-radius: 1rem;
@@ -295,10 +291,10 @@ li {
     display: flex;
     flex-direction: column; }
   @media screen and (max-width: 1200px) {
-    .producto {
+    .productos {
       grid-template-columns: 1fr 1fr; } }
   @media screen and (max-width: 768px) {
-    .producto {
+    .productos {
       grid-template-columns: 1fr; } }
 
 .nosotros__interno {

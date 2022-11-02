@@ -20,7 +20,4 @@
             background-color: $verde-oscuro;
         }
     }
-    @include media($telefono-max) {
-            padding: 0;
-    }
 }

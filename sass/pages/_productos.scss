@@ -2,11 +2,12 @@
 @import "../utilities/mixins";
 
 
-.producto {
+.productos {
     @include grids(1fr, 1fr, 1fr);
     gap: 2rem;
     &__producto{
         @include productos;
+
     }
     @include media($tablet-max){
         grid-template-columns: 1fr 1fr;

@@ -41,9 +41,7 @@ p{
     max-width: 20rem;
     margin: auto;   
     max-height: 20rem; 
-    width: auto;
-    height: auto;
-
+    @include altoAncho (auto,auto);
 }
 li{
     list-style-type: none;
@@ -70,7 +68,6 @@ li{
 
 
     .imagenes{
-        width: auto;
         max-width: 100%;
         max-height: 100%;
     }
