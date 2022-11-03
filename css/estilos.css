@@ -59,6 +59,9 @@ li {
   color: white;
   cursor: pointer; }
 
+.contenidos {
+  padding: 2rem 0 2rem 0; }
+
 @media screen and (max-width: 1200px) {
   .imagenes {
     max-width: 100%;
