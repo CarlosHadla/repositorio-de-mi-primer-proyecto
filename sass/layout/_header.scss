@@ -6,6 +6,7 @@
     background-image: url(../images/backgroundImage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
     padding: 3rem;
 
 
@@ -15,6 +16,7 @@
 
 
     @include media($tablet-max){
+            background-size: 100% ;
             padding: 0;
         & .banner__navegacion{
             background-color: $verde-oscuro;

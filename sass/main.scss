@@ -1,5 +1,9 @@
 
 @import "./layout/universal";
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
 @import "./layout/header";
 @import "./layout/banner";
 @import "./layout/sidebar";
@@ -11,5 +15,3 @@
 @import "./pages/productos";
 @import "./pages/nosotros";
 
-@import "./utilities/variables";
-@import "./utilities/mixins";

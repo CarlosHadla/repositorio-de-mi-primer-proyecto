@@ -30,7 +30,7 @@ h2, h3, h4 {
 p {
   font-size: 1.4rem;
   line-height: 1.3;
-  text-align: justify; }
+  text-align: initial; }
 
 .imagenes {
   max-width: 20rem;
@@ -52,7 +52,8 @@ li {
   color: white;
   text-transform: uppercase;
   border-radius: 0.3rem;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  width: inherit; }
 
 .boton:hover {
   background-color: #185f18;
@@ -70,11 +71,15 @@ li {
     text-align: center; }
   .boton {
     display: block;
-    padding: 1rem; } }
+    padding: 1rem;
+    width: fit-content; } }
+
+@media screen and (max-width: 768px) {
+  .boton {
+    width: inherit; } }
 
 .hamburguesa__contenedor {
-  justify-content: center;
-  align-items: center; }
+  padding: 0; }
 
 .hamburguesa__boton {
   background-color: #185f18;
@@ -94,6 +99,7 @@ li {
     color: #8d8383; }
   @media screen and (max-width: 1200px) {
     .header {
+      background-size: 100%;
       padding: 0; }
       .header .banner__navegacion {
         background-color: #185f18; } }
@@ -261,7 +267,7 @@ li {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   grid-template-rows: auto;
-  grid-template-areas: "titulo titulo titulo" "imagen1 parrafo1 parrafo1" "video video video" "parrafo2 parrafo2 imagen2"; }
+  grid-template-areas: "titulo titulo titulo" "imagen1 parrafo1 parrafo1" "video video video" "parrafo2 imagen2 imagen2"; }
   .entrada1__texto {
     grid-area: titulo; }
   .entrada1__textos1 {
@@ -271,7 +277,9 @@ li {
   .entrada1__imagen1 {
     grid-area: imagen1; }
   .entrada1__imagen2 {
-    grid-area: imagen2; }
+    grid-area: imagen2;
+    max-width: 100%;
+    max-height: 100%; }
   .entrada1__video {
     grid-area: video;
     height: 25rem;

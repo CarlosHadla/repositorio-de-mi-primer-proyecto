@@ -21,15 +21,36 @@
     
     <header class="header">
         <div class="container-fluid p-0 banner">
-            <a class="banner__logo" href="../index.html"><h1>Mi<span>Mate</span></h1></a>
-            <nav>
-                <ul class="banner__navegacion">
-                    <li><a href="../blog/entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
-                    <li><a href="./contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
-                    <li><a href="./productos.html" class="banner__navegacion__enlace">Productos</a></li>
-                    <li><a href="./nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
-                </ul>
-            </nav>
+            <a class="banner__logo" href="./index.html"><h1>Mi<span>Mate</span></h1></a>
+
+            <div class="banner__navegacion__principal">
+                <nav class="banner__ocultar">
+                    <ul class="banner__navegacion">
+                        <li><a href="../blog/entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
+                        <li><a href="./contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
+                        <li><a href="./productos.html" class="banner__navegacion__enlace">Productos</a></li>
+                        <li><a href="./nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-dark  navbar-expand-md">
+                    <div class="container-fluid hamburguesa__contenedor">
+                    <button class="navbar-toggler hamburguesa__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon hamburguesa__icono"></span>
+                    </button>
+                    </div>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="p-0">
+                        <ul class="banner__navegacion">
+                            <li><a href="../blog/entrada.html" class="banner__navegacion__enlace">Entrada</a></li>
+                            <li><a href="./contacto.html" class="banner__navegacion__enlace">Contacto</a></li>
+                            <li><a href="./productos.html" class="banner__navegacion__enlace">Productos</a></li>
+                            <li><a href="./nosotros.html" class="banner__navegacion__enlace">SobreNosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </header>
 
