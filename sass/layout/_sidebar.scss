@@ -2,13 +2,22 @@
 @import "../utilities/mixins";
 
 
-.sidebar__productos {
+.sidebar__producto {
     @include productos;
+    margin-bottom: .3rem;
+    
+
 }
 .sidebar{
 
     &__imagen{
         @include altoAncho (15rem,auto);
+        background-color: $blanco;
+        &__contenedor{
+            background-color: $blanco;
+            @include altoAncho (15rem,15rem);
+            margin: auto;
+        }
 
     }
     &__boton{
@@ -17,10 +26,11 @@
     }
     @include media($tablet-max){
         &__productos{
-            display: flex;
-            flex-direction: row;
-            
-            gap: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 0;
+           gap: 1rem;
+           
         }
     }
     @include media($telefono-max) {
@@ -28,7 +38,7 @@
         width: 100%;
         padding: 1rem 0;
         border-radius: 0;
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
     &__productos .boton{
         border-radius: 0;
