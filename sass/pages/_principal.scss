@@ -14,15 +14,16 @@
 
 .entrada{
     &__contenido{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
     gap: 1rem;
     padding: 3rem 0;
     border-bottom: 1px solid $gris--claro;
     }
     @include media($tablet-max){
         &__contenido {
-            flex-direction: column;
-            margin: 0;
+            grid-template-columns: 1fr;
+            margin: auto;
         }
         &__imagen{
             height: 30rem;

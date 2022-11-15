@@ -21,10 +21,12 @@
 
     }
     &__boton{
-        display: block;
-        padding: .5rem;
+        
+        padding: .5rem ;
     }
     @include media($tablet-max){
+       
+        
         &__productos{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -36,12 +38,12 @@
     @include media($telefono-max) {
     &__productos {
         width: 100%;
-        padding: 1rem 0;
         border-radius: 0;
         grid-template-columns: 1fr;
     }
-    &__productos .boton{
-        border-radius: 0;
+    &__boton{
+        width: 100%;
+        margin: 0;
     }
 
     &__productos__1{

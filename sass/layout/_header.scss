@@ -3,23 +3,35 @@
 
 
 .header{
+    & .banner__navegacion__enlace{
+        color: $negro;
+    }
     background-image: url(../images/backgroundImage.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center center;
 
     padding: 3rem;
 
-
+    & .banner__logo h1{
+        color: $verde;
+    }
     & .banner__logo span{
-        color: $gris;    
+        color: $negro;    
     }
 
 
     @include media($tablet-max){
             background-size: 100% ;
             padding: 0;
+        & .banner__navegacion__enlace{
+            color: $blanco;
+        }
         & .banner__navegacion{
             background-color: $verde-oscuro;
         }
+    }
+    @include media($telefono-max){
+        background-position: top;
     }
 }

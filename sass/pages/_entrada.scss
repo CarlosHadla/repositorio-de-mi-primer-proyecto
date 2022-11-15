@@ -10,13 +10,16 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "titulo titulo titulo"
-    "imagen1 parrafo1 parrafo1"
+    "parrafo1 parrafo1 imagen1 "
     "video video video"
     "parrafo2 imagen2 imagen2";
     &__texto{    grid-area: titulo;}
     &__textos1{    grid-area: parrafo1;}
     &__textos2{    grid-area: parrafo2;}
-    &__imagen1{    grid-area: imagen1;}
+    &__imagen1{  
+        grid-area: imagen1;
+        max-width: 100%;
+        max-height: auto;}
     &__imagen2{    
         grid-area: imagen2;
         max-width: 100%;
